@@ -4,18 +4,130 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+}
+
+.container_1000 {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/******* --- Header --- *******/
+
+/* --- Top Bar --- */
 
 #top-bar {
-  background: #3176bc;
+  background: #fff;
   height: 80px;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.jumbotron {
-  background: #bc314e;
-  height: 500px;
+#logo {
+  text-align: left;
+  margin-top: 32px;
 }
+
+#logo img {
+  height: 15px;
+}
+
+#menu {
+  text-align: right;
+  line-height: 80px;
+}
+
+#menu ul {
+  display: inline-block;
+}
+
+#menu ul li {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#menu ul li:last-child {
+  margin-right: 0;
+}
+
+#menu .left-menu li {
+  margin-right: 24px;
+}
+
+#menu .right-menu li {
+  margin-right: 8px;
+}
+
+#menu .right-menu li:not(:last-child):after {
+  content: '\007C';
+  margin-left: 8px;
+  font-size: 12px;
+  color: #222;
+}
+
+/* --- Banner --- */
+
+.jumbotron {
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 640px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.jumbotron .jumbo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.jumbotron .jumbo-text h1 {
+  font-size: 4.5em;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.jumbotron .jumbo-text p {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+
+.jumbotron .store-buttons div {
+  display: inline-block;
+  margin: 15px 5px;
+}
+
+.jumbotron .store-buttons div img {
+  height: 48px;
+}
+
+/******* --- Main --- *******/
 
 section {
   margin: 20px 0;
