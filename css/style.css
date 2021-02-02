@@ -9,8 +9,8 @@ body {
   font-size: 12px;
 }
 
-.container_1000 {
-  max-width: 1000px;
+.main-container {
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -59,12 +59,14 @@ ul li {
 
 #menu ul {
   display: inline-block;
+  vertical-align: middle;
 }
 
 #menu ul li {
   display: inline;
   text-transform: uppercase;
   font-weight: 600;
+  color: #222;
 }
 
 #menu ul li:last-child {
@@ -86,6 +88,13 @@ ul li {
   color: #222;
 }
 
+#menu .fa-bars {
+  font-size: 2.2em;
+  color: #222;
+  vertical-align: middle;
+  display: none;
+}
+
 /* --- Banner --- */
 
 .jumbotron {
@@ -100,6 +109,7 @@ ul li {
 
 .jumbotron .jumbo-text {
   position: absolute;
+  width: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -108,7 +118,7 @@ ul li {
 }
 
 .jumbotron .jumbo-text h1 {
-  font-size: 4.5em;
+  font-size: 5em;
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -118,13 +128,17 @@ ul li {
   margin-bottom: 12px;
 }
 
+.jumbotron .store-buttons {
+  margin: 35px 0 0;
+}
+
 .jumbotron .store-buttons div {
   display: inline-block;
-  margin: 15px 5px;
+  margin: 0 8px;
 }
 
 .jumbotron .store-buttons div img {
-  height: 48px;
+  height: 50px;
 }
 
 /******* --- Main --- *******/
@@ -161,4 +175,55 @@ section {
 footer {
   background: #222;
   height: 600px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@ TABLET @@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  #menu ul li {
+    display: none;
+  }
+
+  #menu .fa-bars {
+    display: inline-block;
+  }
+
+  .jumbotron .jumbo-text h1 {
+    font-size: 4em;
+  }
+
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@ MOBILE @@@@@@@@@@@@@@@@@@@@@ */
+
+@media screen and (max-width: 768px) {
+
+  #menu ul li {
+    display: none;
+  }
+
+  #menu .fa-bars {
+    display: inline-block;
+  }
+
+  .jumbotron .jumbo-text {
+    max-width: 70%;
+  }
+
+  .jumbotron .jumbo-text h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .jumbotron .jumbo-text p {
+    font-size: 1.3em;
+  }
+
+  .jumbotron .store-buttons div {
+    display: block;
+    margin: 10px 0;
+  }
+
 }
