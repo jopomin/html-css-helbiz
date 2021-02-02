@@ -3,3 +3,50 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+#top-bar {
+  background: #3176bc;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
+
+.jumbotron {
+  background: #bc314e;
+  height: 500px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.bikes {
+  background: #8d31bc;
+  height: 550px;
+}
+
+.nonno {
+  background: #31bcb4;
+  height: 480px;
+}
+
+.smart {
+  background: #5cbc31;
+  height: 420px;
+}
+
+.app {
+  background: #bcb131;
+  height: 400px;
+}
+
+.family {
+  background: #bc7231;
+  height: 400px;
+}
+
+footer {
+  background: #222;
+  height: 600px;
+}
